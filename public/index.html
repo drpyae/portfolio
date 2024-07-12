@@ -1,6 +1,22 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JK87D9735C"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-JK87D9735C');
+    </script>
+    <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init('YOUR_USER_ID');
+        })();
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <meta name="description" content="Pyae Phyo Aung's professional portfolio showcasing experience in data science, healthcare, and program management.">
     <meta name="keywords" content="Pyae Phyo Aung, data science, healthcare, program management, portfolio">
     <meta name="author" content="Pyae Phyo Aung">
@@ -66,6 +82,7 @@
     </style>
   </head>
   <body>
+    <button id="back-to-top" title="Go to top">Top</button>
     <header>
         <div class="container">
             <div id="branding">
@@ -181,8 +198,33 @@
       </div>
       <!-- Add more projects similarly -->
   </section>
-  
+  <section id="blog" class="container" data-aos="fade-up">
+    <h2>Blog</h2>
+    <div class="blog-post">
+        <h3>Blog Post Title 1</h3>
+        <p>Date: July 12, 2024</p>
+        <p>Excerpt of the blog post. This is a brief introduction to the blog content...</p>
+        <a href="URL_TO_FULL_POST" target="_blank">Read More</a>
+    </div>
+    <div class="blog-post">
+        <h3>Blog Post Title 2</h3>
+        <p>Date: July 5, 2024</p>
+        <p>Excerpt of the blog post. This is a brief introduction to the blog content...</p>
+        <a href="URL_TO_FULL_POST" target="_blank">Read More</a>
+    </div>
+    <!-- Add more blog posts similarly -->
+    </section>
 
+  
+    <footer>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/ppaung" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <!--<a href="https://twitter.com/YOUR_TWITTER_HANDLE" target="_blank"><i class="fab fa-twitter"></i></a>-->
+            <a href="https://github.com/drpyae" target="_blank"><i class="fab fa-github"></i></a>
+            <!-- Add more social links as needed -->
+        </div>
+    </footer>
+    
     <footer>
         <p>&copy; 2024 Pyae Phyo Aung. All rights reserved.</p>
     </footer>

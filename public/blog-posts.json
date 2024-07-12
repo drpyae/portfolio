@@ -1,0 +1,14 @@
+[
+    {
+        "title": "Blog Post Title 1",
+        "date": "July 12, 2024",
+        "excerpt": "Excerpt of the blog post. This is a brief introduction to the blog content...",
+        "url": "URL_TO_FULL_POST"
+    },
+    {
+        "title": "Blog Post Title 2",
+        "date": "July 5, 2024",
+        "excerpt": "Excerpt of the blog post. This is a brief introduction to the blog content...",
+        "url": "URL_TO_FULL_POST"
+    }
+]
