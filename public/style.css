@@ -103,7 +103,7 @@ form button:hover {
     background-color: #77d42a;
     color: #fff;
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     header ul {
         text-align: center;
     }
@@ -163,7 +163,7 @@ form button:hover {
     color: #fff;
 }
 footer {
-    background-color: #333;
+    background-color: #e0caca;
     color: #fff;
     text-align: center;
     padding: 10px 0;
