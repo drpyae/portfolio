@@ -21,6 +21,7 @@ backToTopButton.addEventListener('click', function() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 });
+
 document.getElementById('contact-form').addEventListener('submit', function(event) {
     event.preventDefault();
     const name = document.getElementById('name').value;
