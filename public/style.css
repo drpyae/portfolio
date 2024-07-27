@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: hsl(0, 38%, 89%);
     color: #333;
     scroll-behavior: smooth;
 }
@@ -174,7 +174,7 @@ footer {
 .social-links {
     display: flex;
     justify-content: center;
-    gap: 15px;
+    gap: 50px;
 }
 .social-links a {
     color: #fff;

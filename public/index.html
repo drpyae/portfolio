@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QF+Qlf9ZXN4+4uJl4Ndor1UlfKhlRZLCsTb0ujLgR5bQ5e9rIRo1Rx0+6kvoB4oG" crossorigin="anonymous">
+
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-JK87D9735C"></script>
     <script>
@@ -82,23 +85,34 @@
     </style>
   </head>
   <body>
-    
-    <header>
+    <!-- Bootstrap JS (with Popper.js for tooltips, popovers) -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js" integrity="sha384-q2Zl6F8Zc+Nf9zjBxW4GlhNvK3KJ7Z/Ff3r0ovTlmJN3EYNKH9TkNy9hUO2kOi1k" crossorigin="anonymous"></script>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
-            <div id="branding">
-                <h1>Pyae Phyo Aung</h1>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#education">Education</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                </ul>
-            </nav>
+          <a class="navbar-brand" href="#">Pyae Phyo Aung</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link active" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#projects">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#testimonials">Testimonials</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
         </div>
-    </header>
+      </nav>
+      
 
     <section id="about" class="container">
         <h2>About Me</h2>
@@ -158,7 +172,7 @@
         <p><strong>University of Medicine Magway</strong> | M.B;B.S | 2007 – 2014</p>
         <p><strong>IBM Data Science Professional Certificate </strong></p>
         <p><strong>Google Analytics Professional Certificate </strong></p>
-    </section>b 
+    </section> 
     <section id="skills" class="container" data-aos="fade-up">
         <h2>Skills</h2>
         <ul>
