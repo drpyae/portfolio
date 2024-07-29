@@ -30,7 +30,7 @@ document.getElementById('contact-form').addEventListener('submit', function(even
     const status = document.getElementById('form-status');
 
     if (name && email && message) {
-        emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', {
+        emailjs.send(service_vsi7v4j, template_jap6fg5, {
             from_name: name,
             from_email: email,
             message: message

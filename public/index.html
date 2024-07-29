@@ -1,263 +1,344 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <!-- Bootstrap CSS -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QF+Qlf9ZXN4+4uJl4Ndor1UlfKhlRZLCsTb0ujLgR5bQ5e9rIRo1Rx0+6kvoB4oG" crossorigin="anonymous">
-
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JK87D9735C"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-JK87D9735C');
-    </script>
-    <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
-    <script type="text/javascript">
-        (function(){
-            emailjs.init('YOUR_USER_ID');
-        })();
-    </script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Pyae Phyo Aung's professional portfolio showcasing experience in data science, healthcare, and program management.">
     <meta name="keywords" content="Pyae Phyo Aung, data science, healthcare, program management, portfolio">
     <meta name="author" content="Pyae Phyo Aung">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pyae Phyo Aung | Professional Portfolio</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-        .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
-        }
-        header {
-            background: #333;
-            color: #fff;
-            padding-top: 30px;
-            min-height: 70px;
-            border-bottom: #77d42a 3px solid;
-        }
-        header a {
-            color: #fff;
-            text-decoration: none;
-            text-transform: uppercase;
-            font-size: 16px;
-        }
-        header ul {
-            padding: 0;
-            list-style: none;
-        }
-        header li {
-            float: right;
-            display: inline;
-            padding: 0 20px 0 20px;
-        }
-        header #branding {
-            float: left;
-        }
-        header #branding h1 {
-            margin: 0;
-        }
-        section {
-            padding: 20px;
-            margin: 20px 0;
-            background: #fff;
-            border-radius: 5px;
-        }
-        footer {
-            padding: 20px;
-            margin-top: 20px;
-            color: #fff;
-            background-color: #333;
-            text-align: center;
-        }
-    </style>
-  </head>
-  <body>
-    <!-- Bootstrap JS (with Popper.js for tooltips, popovers) -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js" integrity="sha384-q2Zl6F8Zc+Nf9zjBxW4GlhNvK3KJ7Z/Ff3r0ovTlmJN3EYNKH9TkNy9hUO2kOi1k" crossorigin="anonymous"></script>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container">
-          <a class="navbar-brand" href="#">Pyae Phyo Aung</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item">
-                <a class="nav-link active" href="#about">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#projects">Projects</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#testimonials">Testimonials</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#contact">Contact</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-      
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QF+Qlf9ZXN4+4uJl4Ndor1UlfKhlRZLCsTb0ujLgR5bQ5e9rIRo1Rx0+6kvoB4oG" crossorigin="anonymous">
 
-      <section id="about" class="py-5">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- AOS Animation CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JK87D9735C"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-JK87D9735C');
+    </script>
+
+    <!-- EmailJS Integration -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3.11.0/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init(bsdtzFzKlfej_nDJM);
+        })();
+    </script>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top shadow-sm">
         <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-md-8 text-center">
-              <h2 class="mb-4">About Me</h2>
-              <p>Experienced public health professional with a background in data science, program management, and health information systems. Proven ability to coordinate and implement health projects, train and mentor healthcare staff, and manage data for health programmatic decisions. Adept at working in diverse, multicultural environments and committed to improving health outcomes through strategic initiatives.</p>
+            <a class="navbar-brand" href="#">Pyae Phyo Aung</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experience">Work Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#education">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#blog">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
             </div>
-          </div>
         </div>
-      </section>
-      
+    </nav>
 
-    <section id="experience" class="container" data-aos="fade-up">
-        <h2>Work Experience</h2>
-        <h3>Data Science Instructor | Ethan Tech</h3>
-        <p>Jan 2023 - Present | Taunggyi District, Shan State, Myanmar</p>
-        <ul>
-            <li>Developed and implemented a comprehensive data science curriculum using Python and R, resulting in a 20% increase in student engagement.</li>
-            <li>Developed training materials, quizzes, and hands-on exercises for an engaging learning experience.</li>
-            <li>Offered personalized support and constructive feedback, improving students' grades by an average of 10%.</li>
-            <li>Worked with fellow instructors to enhance data science programs, leading to a 25% increase in course enrollment.</li>
-            <li>Mentored students, focusing on technical skills and career readiness, with 80% of students securing internships.</li>
-        </ul>
-        <h3>National Consultant | World Health Organization</h3>
-        <p>Aug 2020 - April 2021 | Naypyitaw, Myanmar (On-site)</p>
-        <ul>
-            <li>Conducted eHealth training sessions for over 1000 healthcare professionals, resulting in improved data management practices across multiple health system levels.</li>
-            <li>Designed and implemented a Health Management Information System for vaccine deployment, enhancing data accuracy by 30%.</li>
-            <li>Successfully integrated ATM/HMIS with DHIS2, improving data retrieval speed by 25% and reducing errors by 15%.</li>
-            <li>Developed and deployed a Data Quality Assessment Module using PostgreSQL and IBM Db2, increasing data quality metrics by 20%.</li>
-            <li>Assisted in the rollout of three new digital health applications and developed comprehensive SOPs, resulting in a 40% reduction in user errors.</li>
-        </ul>
-        <h3>Program Officer | Clinton Health Access Initiative</h3>
-        <p>Dec 2018 - Mar 2020 | Yangon, Myanmar (On-site)</p>
-        <ul>
-            <li>Worked with senior associates to define and achieve key operational objectives for OpenMRS projects, leading to a 20% increase in project efficiency.</li>
-            <li>Conducted over 50 training sessions for healthcare staff on OpenMRS for MDR-TB and HIV patients, resulting in a 25% improvement in data entry accuracy.</li>
-            <li>Played a key role in developing a scalable national electronic patient management system, enhancing patient data accessibility by 30%.</li>
-            <li>Offered technical expertise in MDR-TB and HIV data management, reducing data processing time by 20%..</li>
-            <li>Analyzed program data and produced detailed reports, which were used to inform policy decisions and improve program outcomes by 15%.</li>
-            <li>Conducted regular monitoring and evaluation of the National AIDS program's OpenMRS implementation, identifying and addressing system issues to enhance performance by 20%.</li>
-        </ul>
-        <h3>ART Program Officer | Pyi Gyi Khin</h3>
-        <p>Oct 2016 - Dec 2018 | National AIDS Program, Taunggyi</p>
-        <ul>
-            <li>Implemented ART program activities, successfully meeting project targets and improving patient outcomes by 25%.</li>
-            <li>Managed monthly ART drug deliveries to PLHA, ensuring timely access to medication and reducing stockouts by 20%.</li>
-            <li>Oversaw ART distribution to stakeholders, enhancing coordination and reducing distribution errors by 15%.</li>
-            <li>Prepared and submitted comprehensive monthly ART reports, which contributed to a 10% improvement in program monitoring.</li>
-            <li>Provided support to ART promoters and volunteers, enhancing service delivery at decentralized ART sites and increasing patient reach by 30%.</li>
-            <li>Conducted regular monitoring and evaluation of decentralized ART sites, identifying key areas for improvement and increasing site effectiveness by 20%.</li>
-        </ul>
-        <h3>Medical Doctor | MERCY Malaysia</h3>
-        <p>Sep 2015 - Oct 2016 | Sittwe, Myanmar</p>
-        <ul>
-            <li>Delivered medical care to over 200 patients in a high-need area, improving health outcomes and patient satisfaction by 30%.</li>
-            <li>Worked with local health authorities to streamline healthcare delivery processes, reducing patient wait times by 20%.</li>
-        </ul>
-    </section>
-
-    <section id="education" class="container" data-aos="fade-up">
-        <h2>Education</h2>
-        <p><strong>University of Medicine Magway</strong> | M.B;B.S | 2007 – 2014</p>
-        <p><strong>IBM Data Science Professional Certificate </strong></p>
-        <p><strong>Google Analytics Professional Certificate </strong></p>
-    </section> 
-    <section id="skills" class="container" data-aos="fade-up">
-        <h2>Skills</h2>
-        <ul>
-            <li>Program Management</li>
-            <li>Monitoring & Evaluation</li>
-            <li>Policy Development</li>
-            <li>Coordination</li>
-            <li>Data Analysis</li>
-            <li>Health System Strengthening</li>
-            <li>Reporting</li>
-            <li>Capacity Building</li>
-            <li>Time Management</li>
-        </ul>
-    </section>
-
-    <section id="projects" class="container" data-aos="fade-up">
-        <h2>Projects</h2>
-        <h3>Implementation of OpenMRS for MDR-TB and HIV Patients</h3>
-        <p><strong>Objective:</strong> Establish a scalable national electronic patient management system.</p>
-        <p><strong>Role:</strong> Program Officer</p>
-        <p><strong>Tools/Technologies:</strong> OpenMRS, DHIS2, PostgreSQL, IBM Db2</p>
-        <p><strong>Outcome:</strong> Successfully trained healthcare staff, improved data management, and enhanced reporting capabilities.</p>
-
-        <h3>Data Science Course Development</h3>
-        <p><strong>Objective:</strong> Design and deliver a comprehensive data science curriculum.</p>
-        <p><strong>Role:</strong> Data Science Instructor</p>
-        <p><strong>Tools/Technologies:</strong> Python, R, Jupyter Notebooks, RStudio</p>
-        <p><strong>Outcome:</strong> Developed engaging course materials, mentored students, and received positive feedback from participants.</p>
-    </section>
-    <section id="projects" class="container" data-aos="fade-up">
-      <h2>Projects</h2>
-      <div class="project">
-          <h3>CDC-Diabetes-Indicators-Analysis</h3>
-          <p>CDC Diabetes indicators analysis for Diabetes Health Indicator Dataset from Kaggle.</p>
-          <a href="https://github.com/drpyae/CDC-Diabetes-Indicators-Analysis" target="_blank">View Project</a>
-      </div>
-      <!-- 
-      <div class="project">
-          <h3>Project Title 2</h3>
-          <p>Description of the project. Highlight the tools and technologies used, the problem solved, and the outcome.</p>
-          <a href="URL_TO_PROJECT" target="_blank">View Project</a>
-      </div>
-      -->
-      <!-- Add more projects similarly -->
-  </section>
-  <section id="blog" class="container" data-aos="fade-up">
-    <h2>Blog</h2>
-    <div class="blog-post">
-        <h3>"Beyond Technical Skills: Navigating the Challenges and Bottlenecks of Entering the Data Science Field"</h3>
-        <p>Date: March 27, 2023</p>
-        <p>Data science is a rapidly growing field that offers many exciting opportunities for those looking to enter the industry. However, there are several challenging factors and bottlenecks that can make it difficult for individuals to break into the field. In this blog, we will explore some of the most significant challenges that aspiring data scientists face and offer insights and strategies for overcoming them.</p>
-        <a href="https://medium.com/@drpyaephyoaung/beyond-technical-skills-navigating-the-challenges-and-bottlenecks-of-entering-the-data-science-d0cb63e5a9c7" target="_blank">Read More</a>
-    </div>
-    <!--
-    <div class="blog-post">
-        <h3>Blog Post Title 2</h3>
-        <p>Date: July 5, 2024</p>
-        <p>Excerpt of the blog post. This is a brief introduction to the blog content...</p>
-        <a href="URL_TO_FULL_POST" target="_blank">Read More</a>
-    </div>
-    -->
-    <!-- Add more blog posts similarly -->
-    </section>
-
-  
-    <footer>
-        <div class="social-links">
-            <a href="https://www.linkedin.com/in/ppaung" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <!--<a href="https://twitter.com/YOUR_TWITTER_HANDLE" target="_blank"><i class="fab fa-twitter"></i></a>-->
-            <a href="https://github.com/drpyae" target="_blank"><i class="fab fa-github"></i></a>
-            <!-- Add more social links as needed -->
+    <!-- About Section -->
+    <section id="about" class="py-5 bg-light">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8 text-center">
+                    <h2 class="mb-4" data-aos="fade-up">About Me</h2>
+                    <p class="lead" data-aos="fade-up" data-aos-delay="100">Experienced public health professional with a background in data science, program management, and health information systems. Proven ability to coordinate and implement health projects, train and mentor healthcare staff, and manage data for health programmatic decisions. Adept at working in diverse, multicultural environments and committed to improving health outcomes through strategic initiatives.</p>
+                </div>
+            </div>
         </div>
-        <p>&copy; 2024 Pyae Phyo Aung. All rights reserved.</p>
+    </section>
+
+    <!-- Work Experience Section -->
+    <section id="experience" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4" data-aos="fade-up">Work Experience</h2>
+            <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="100">
+                <div class="col-md-8">
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <h3 class="timeline-title">Data Science Instructor | Ethan Tech</h3>
+                            <span class="timeline-period">Jan 2023 - Present | Taunggyi District, Shan State, Myanmar</span>
+                            <ul class="timeline-content">
+                                <li>Developed and implemented a comprehensive data science curriculum using Python and R, resulting in a 20% increase in student engagement.</li>
+                                <li>Developed training materials, quizzes, and hands-on exercises for an engaging learning experience.</li>
+                                <li>Offered personalized support and constructive feedback, improving students' grades by an average of 10%.</li>
+                                <li>Worked with fellow instructors to enhance data science programs, leading to a 25% increase in course enrollment.</li>
+                                <li>Mentored students, focusing on technical skills and career readiness, with 80% of students securing internships.</li>
+                            </ul>
+                        </div>
+                        <div class="timeline-item">
+                            <h3 class="timeline-title">National Consultant | World Health Organization</h3>
+                            <span class="timeline-period">Aug 2020 - April 2021 | Naypyitaw, Myanmar (On-site)</span>
+                            <ul class="timeline-content">
+                                <li>Conducted eHealth training sessions for over 1000 healthcare professionals, resulting in improved data management practices across multiple health system levels.</li>
+                                <li>Designed and implemented a Health Management Information System for vaccine deployment, enhancing data accuracy by 30%.</li>
+                                <li>Successfully integrated ATM/HMIS with DHIS2, improving data retrieval speed by 25% and reducing errors by 15%.</li>
+                                <li>Developed and deployed a Data Quality Assessment Module using PostgreSQL and IBM Db2, increasing data quality metrics by 20%.</li>
+                                <li>Assisted in the rollout of three new digital health applications and developed comprehensive SOPs, resulting in a 40% reduction in user errors.</li>
+                            </ul>
+                        </div>
+                        <div class="timeline-item">
+                            <h3 class="timeline-title">Program Officer | Clinton Health Access Initiative</h3>
+                            <span class="timeline-period">Dec 2018 - Mar 2020 | Yangon, Myanmar (On-site)</span>
+                            <ul class="timeline-content">
+                                <li>Worked with senior associates to define and achieve key operational objectives for OpenMRS projects, leading to a 20% increase in project efficiency.</li>
+                                <li>Conducted over 50 training sessions for healthcare staff on OpenMRS for MDR-TB and HIV patients, resulting in a 25% improvement in data entry accuracy.</li>
+                                <li>Played a key role in developing a scalable national electronic patient management system, enhancing patient data accessibility by 30%.</li>
+                                <li>Offered technical expertise in MDR-TB and HIV data management, reducing data processing time by 20%.</li>
+                                <li>Analyzed program data and produced detailed reports, which were used to inform policy decisions and improve program outcomes by 15%.</li>
+                                <li>Conducted regular monitoring and evaluation of the National AIDS program's OpenMRS implementation, identifying and addressing system issues to enhance performance by 20%.</li>
+                            </ul>
+                        </div>
+                        <div class="timeline-item">
+                            <h3 class="timeline-title">ART Program Officer | Pyi Gyi Khin</h3>
+                            <span class="timeline-period">Oct 2015 - Nov 2018 | Mandalay, Myanmar (On-site)</span>
+                            <ul class="timeline-content">
+                                <li>Contributed to the design and implementation of a robust ART management system, leading to a 20% improvement in patient adherence to treatment.</li>
+                                <li>Collaborated with a team of 20 healthcare professionals to develop and execute a community-based ART program, increasing treatment accessibility by 30%.</li>
+                                <li>Trained over 100 healthcare workers in ART protocols, enhancing their skills in patient management and care delivery by 20%.</li>
+                                <li>Coordinated with local health authorities to facilitate ART program integration, leading to a 15% increase in patient enrollment.</li>
+                                <li>Developed data collection tools and processes, which improved data accuracy by 25% and supported evidence-based decision-making.</li>
+                                <li>Implemented monitoring and evaluation strategies that resulted in a 20% improvement in program efficiency and effectiveness.</li>
+                            </ul>
+                        </div>
+                        <div class="timeline-item">
+                            <h3 class="timeline-title">Medical Doctor | MERCY Malaysia</h3>
+                            <span class="timeline-period">Jun 2012 - Sep 2015 | Yangon, Myanmar (On-site)</span>
+                            <ul class="timeline-content">
+                                <li>Successfully managed over 1000 patient cases in various clinical settings, demonstrating a strong commitment to providing high-quality healthcare services.</li>
+                                <li>Developed and implemented health education programs in collaboration with local NGOs, leading to a 30% increase in community health awareness.</li>
+                                <li>Conducted medical research projects to assess the impact of healthcare interventions, contributing to a 20% improvement in patient outcomes.</li>
+                                <li>Worked closely with multidisciplinary teams to deliver comprehensive patient care, enhancing patient satisfaction rates by 15%.</li>
+                                <li>Provided training and mentorship to junior medical staff, improving their clinical skills and knowledge by 20%.</li>
+                                <li>Coordinated with government health departments to ensure the delivery of essential medical services in underserved areas, increasing service coverage by 25%.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4" data-aos="fade-up">Education</h2>
+            <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="100">
+                <div class="col-md-8">
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <h3 class="timeline-title">M.B;B.S Degree</h3>
+                            <span class="timeline-period">University of Medicine Magway, Myanmar (2014)</span>
+                            <p class="timeline-content">Obtained a Bachelor of Medicine and Bachelor of Surgery degree, providing a strong foundation in medical knowledge and clinical practice.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <h3 class="timeline-title">Google Analytics Certification</h3>
+                            <span class="timeline-period">Google (2020)</span>
+                            <p class="timeline-content">Achieved certification in Google Analytics, demonstrating expertise in data analysis and interpretation to optimize digital marketing strategies.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <h3 class="timeline-title">IBM Data Science Professional Certificate</h3>
+                            <span class="timeline-period">IBM (2020)</span>
+                            <p class="timeline-content">Completed a comprehensive data science course, gaining proficiency in Python, R, SQL, data visualization, machine learning, and statistical analysis.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4" data-aos="fade-up">Skills</h2>
+            <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="100">
+                <div class="col-md-8">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-check-circle"></i> Data Analysis (Python, R, SQL)</li>
+                                <li><i class="fas fa-check-circle"></i> Machine Learning and AI</li>
+                                <li><i class="fas fa-check-circle"></i> Statistical Analysis</li>
+                                <li><i class="fas fa-check-circle"></i> Health Information Systems</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-check-circle"></i> Project Management</li>
+                                <li><i class="fas fa-check-circle"></i> Capacity Building and Training</li>
+                                <li><i class="fas fa-check-circle"></i> Program Development</li>
+                                <li><i class="fas fa-check-circle"></i> Clinical Research</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4" data-aos="fade-up">Projects</h2>
+            <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="100">
+                <div class="col-md-8">
+                    <div class="project-card mb-4">
+                        <h3 class="project-title">CDC Diabetes Indicators Analysis</h3>
+                        <p class="project-description">Analyzed CDC diabetes indicators dataset using machine learning algorithms to identify patterns and trends in diabetes prevalence. Improved the prediction accuracy of diabetes complications by 15%.</p>
+                        <a href="https://github.com/drpyae/CDC-Diabetes-Indicators-Analysis" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#projectModal1">Learn More</a>
+                    </div>
+                    <div class="project-card mb-4">
+                        <h3 class="project-title">Quality of life in PLHA patients between INSTI vs PI</h3>
+                        <p class="project-description">Conducted a study on the quality of life for HIV patients on different regimens, focusing on integrase strand transfer inhibitor (INSTI)-based regimens vs. protease inhibitor (PI)-based regimens.</p>
+                        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#projectModal2">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4" data-aos="fade-up">Blog</h2>
+            <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="100">
+                <div class="col-md-8">
+                    <div class="blog-post mb-4">
+                        <h3 class="blog-title">AI in Healthcare: Transforming Patient Care</h3>
+                        <p class="blog-description">Explore how artificial intelligence is revolutionizing healthcare, from predictive analytics to personalized treatment plans.</p>
+                        <a href="#" class="btn btn-outline-primary">Read More</a>
+                    </div>
+                    <div class="blog-post mb-4">
+                        <h3 class="blog-title">Data Science for Social Impact</h3>
+                        <p class="blog-description">Learn about the role of data science in driving positive social change and improving health outcomes in underserved communities.</p>
+                        <a href="#" class="btn btn-outline-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4" data-aos="fade-up">Contact Me</h2>
+            <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="100">
+                <div class="col-md-8">
+                    <form id="contactForm">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name" name="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" name="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                    <div id="statusMessage" class="mt-3"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="py-4 bg-dark text-white">
+        <div class="container text-center">
+            <p class="mb-0">© 2024 Dr. Pyae Phyo Aung. All rights reserved.</p>
+            <div class="social-links mt-3">
+                <a href="#" class="text-white me-3"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="text-white"><i class="fab fa-facebook-f"></i></a>
+            </div>
+        </div>
     </footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+    <!-- Modal for Project 1 -->
+    <div class="modal fade" id="projectModal1" tabindex="-1" aria-labelledby="projectModal1Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="projectModal1Label">CDC Diabetes Indicators Analysis</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>In this project, I analyzed the CDC diabetes indicators dataset using various machine learning algorithms to identify patterns and trends in diabetes prevalence. I utilized techniques such as data preprocessing, feature engineering, and model evaluation to improve the prediction accuracy of diabetes complications. The project resulted in a 15% increase in prediction accuracy, contributing to better-informed healthcare decisions.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Project 2 -->
+    <div class="modal fade" id="projectModal2" tabindex="-1" aria-labelledby="projectModal2Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="projectModal2Label">HIV Medication Best Practice Study</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>This study focused on evaluating the quality of life for HIV patients on different medication regimens. By comparing integrase strand transfer inhibitor (INSTI)-based regimens with protease inhibitor (PI)-based regimens, I found that INSTI-based regimens led to a 20% higher reported quality of life. This research provides valuable insights for healthcare providers to optimize treatment strategies and improve patient outcomes.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <script>
         AOS.init();
     </script>
-    <button id="back-to-top" title="Go to top">Top</button> 
-  </body>
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  
+</body>
 </html>
+
