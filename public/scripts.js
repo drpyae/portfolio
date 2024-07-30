@@ -6,21 +6,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
-// Back to top button
-const backToTopButton = document.getElementById('back-to-top');
-
-window.onscroll = function() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        backToTopButton.style.display = "block";
-    } else {
-        backToTopButton.style.display = "none";
-    }
-};
-
-backToTopButton.addEventListener('click', function() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-});
 
 document.getElementById('contact-form').addEventListener('submit', function(event) {
     event.preventDefault();
@@ -46,6 +31,7 @@ document.getElementById('contact-form').addEventListener('submit', function(even
         status.style.color = 'red';
     }
 });
+
 fetch('blog-posts.json')
     .then(response => response.json())
     .then(data => {
